@@ -80,16 +80,20 @@ The model uses CNN layers to extract spatial features from audio spectrograms an
 
 ```
 SpeechNet-CNNLSTM/
-│── data/                # Dataset
-│── models/              # Saved trained models
-│── results/             # Output graphs & confusion matrix
-│── notebooks/           # Jupyter notebooks
+│── data/ (optional sample only)
+│── models/
+│── results/
+│   ├── confusion_matrix.png
+│
 │── src/
-│   ├── preprocessing.py
-│   ├── model.py
-│   ├── train.py
-│   ├── evaluate.py
-│   ├── inference.py
+│   ├── cnn_lstm_asr_augmented.py
+│   ├── cnn_lstm_asr_augmented_resume.py
+│   ├── evaluate_cnnlstm_asr.py
+│   ├── realtime_cnnlstm_asr_test.py
+│   ├── generate_manifest.py
+│   ├── prepare_audio_data.py
+│
+│── vocab.json
 │── requirements.txt
 │── README.md
 ```
